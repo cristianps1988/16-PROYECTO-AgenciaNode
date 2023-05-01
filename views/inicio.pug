@@ -1,5 +1,30 @@
 extends ./layout/index
 
-block contenido
-    p Inicio
-    img(src='img/cupon.jpg')
+block slider
+    .slider
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido 
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia dicta commodi amet inventore excepturi ratione blanditiis, adipisci sed, debitis quibusdam ipsam voluptatibus, voluptates laudantium. Voluptates, necessitatibus. Nulla, aut. Maiores beatae ipsa esse, suscipit optio provident 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia dicta commodi amet inventore excepturi ratione blanditiis, adipisci sed, debitis quibusdam ipsam voluptatibus, voluptates laudantium. Voluptates, necessitatibus. Nulla, aut. Maiores beatae ipsa esse, suscipit optio provident labore vero iure ex a quos eligendi quaerat dolor praesentium. Odit necessitatibus quas maxime!
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen inicio", class='img-fluid')
+        include ./layout/bloque_viajes.pug
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Mayo de 2023 - 30 de Mayo de 2023
+                        p.precio $2.550 USD 
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales.pug

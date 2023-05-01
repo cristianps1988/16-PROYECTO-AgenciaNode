@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/cristianps1988/16-PROYECTO-AgenciaNode#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "pug": "^3.0.2"
+    "mysql2": "^3.2.4",
+    "pug": "^3.0.2",
+    "sequelize": "^6.31.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

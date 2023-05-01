@@ -1,8 +1,32 @@
 extends ./layout/index
 
 block contenido
-    p Nosotros
+    main.container.mt-5     
+        .row 
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="imagen nosotros", class='img-fluid')
+            .col-md-7
+                h1  #{pagina}
+                blockquote Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis necessitatibus dignissimos, quibusdam voluptatem voluptatum nulla nesciunt saepe cumque hic, labore ipsa ea ut consequuntur. Quasi exercitationem vel, dolor porro obcaecati voluptatum quos odit accusamus distinctio tempora culpa eum beatae asperiores vero ab totam pariatur, perferendis maxime, praesentium fugit eos?
 
-    //- inyectar una variable desde js
-    p= viajes 
-    p #{viajes} 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolore rem maxime labore harum corporis libero rerum voluptate sequi quasi nam illum mollitia asperiores, deserunt error! Ducimus veritatis adipisci quod consequatur iste aspernatur rem accusamus delectus rerum deserunt quaerat illo, at sit. Voluptatum voluptatem sit eos excepturi ratione odit repellendus.
+                
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolore rem maxime labore harum corporis libero rerum voluptate sequi quasi nam illum mollitia asperiores, deserunt error! Ducimus veritatis adipisci quod consequatur iste aspernatur rem accusamus delectus rerum deserunt quaerat illo, at sit. Voluptatum voluptatem sit eos excepturi ratione odit repellendus.
+
+    .listado-iconos 
+        .container.mt-5.py-5.text-center
+            .row 
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class='img-fluid mb-4')
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eum similique odit, nihil error architecto sed et sequi quas illo quod, ea deleniti. Repellat, tempora.
+
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class='img-fluid mb-4')
+                    h2.mb-4 Mejores Destinos
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eum similique odit, nihil error architecto sed et sequi quas illo quod, ea deleniti. Repellat, tempora.
+
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono precios", class='img-fluid mb-4')
+                    h2.mb-4 Los mejores precios
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eum similique odit, nihil error architecto sed et sequi quas illo quod, ea deleniti. Repellat, tempora.
